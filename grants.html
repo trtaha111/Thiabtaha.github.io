@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected grants of Thiab R. Taha.">
+  <title>Grants | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="">Research</a>
+<a href="leadership.html" class="">Leadership</a>
+<a href="publications.html" class="">Publications</a>
+<a href="presentations.html" class="">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="active">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Grants</p><h1>Selected external grants and funded activities</h1></div></section>
+<section class="section">
+  <div class="container">
+    <div class="publication-list">
+      <article><span>2021–2023</span><div><h3>Center for Inclusive Computing Diagnostic Grant</h3><p>Northeastern University. Thiab Taha, PI, with co-investigators. Award amount: $60,000.</p></div></article>
+      <article><span>2021–2022</span><div><h3>Predicting co-selection of antibiotic resistance in Salmonella and Enterococcus</h3><p>USDA fellowship grant. Thiab Taha, PI. Award amount: $37,000.</p></div></article>
+      <article><span>2021–2025</span><div><h3>HEC Fellowship for Six Ph.D. Students</h3><p>Higher Education Commission, Pakistan. Thiab Taha, PI.</p></div></article>
+      <article><span>2022</span><div><h3>Acquisition of Goods and Services</h3><p>USDA ARS. Thiab Taha, PI. Award amount: $15,573.</p></div></article>
+      <article><span>2023–2025</span><div><h3>Innovation Engine in Cyberphysical, Edge, and IoT Systems Security</h3><p>NSF project in the Central Savannah River Area. Role: Co-investigator.</p></div></article>
+      <article><span>2014–2023</span><div><h3>NSF REU Site: Genomics and Computational Biology</h3><p>Senior Personnel on two NSF-funded REU projects.</p></div></article>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

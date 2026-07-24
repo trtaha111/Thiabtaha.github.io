@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biography of Thiab R. Taha.">
+  <title>Biography | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="active">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="">Research</a>
+<a href="leadership.html" class="">Leadership</a>
+<a href="publications.html" class="">Publications</a>
+<a href="presentations.html" class="">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Biography</p><h1>Academic and professional biography</h1></div></section>
+<section class="section">
+  <div class="container split">
+    <div><img src="assets/Taha_Photo.jpg" alt="Thiab R. Taha" class="bio-photo"></div>
+    <div class="prose">
+      <p>
+        Thiab R. Taha is Professor Emeritus in the School of Computing at the University of Georgia.
+        He joined UGA in 1982 and served the university for more than four decades through teaching,
+        research, administration, curriculum development, professional service, and international collaboration.
+      </p>
+      <p>
+        He served as Head of the Department of Computer Science from July 2013 through June 2022,
+        followed by service as Interim Director of the School of Computing from July 2022 through June 2023.
+      </p>
+      <p>
+        His research interests include computational science, parallel computing, numerical methods,
+        nonlinear evolution equations, water waves, optical-fiber communication systems, and systems biology.
+      </p>
+      <p>
+        He has published more than 100 journal and conference papers, delivered more than 100 invited presentations,
+        organized major international conferences, and served in senior editorial and professional leadership roles.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section muted">
+  <div class="container">
+    <h2>Career timeline</h2>
+    <div class="timeline">
+      <article><div>2022–2023</div><section><h3>Interim Director, School of Computing</h3><p>Helped guide the newly established school and its academic development.</p></section></article>
+      <article><div>2013–2022</div><section><h3>Head, Department of Computer Science</h3><p>Led major growth in enrollment, faculty, degree programs, data science, and cybersecurity.</p></section></article>
+      <article><div>1994–2013</div><section><h3>Professor of Computer Science</h3><p>Research, teaching, graduate education, editorial leadership, and university service.</p></section></article>
+      <article><div>1988–1994</div><section><h3>Associate Professor</h3><p>Expanded research and service in numerical analysis and scientific computing.</p></section></article>
+      <article><div>1982–1988</div><section><h3>Assistant Professor</h3><p>Joined the University of Georgia Department of Computer Science.</p></section></article>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

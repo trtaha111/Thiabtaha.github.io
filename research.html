@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research areas of Thiab R. Taha.">
+  <title>Research | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="active">Research</a>
+<a href="leadership.html" class="">Leadership</a>
+<a href="publications.html" class="">Publications</a>
+<a href="presentations.html" class="">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Research</p><h1>Research areas and scholarly interests</h1></div></section>
+<section class="section">
+  <div class="container">
+    <div class="card-grid three">
+      <article class="topic-card"><h3>Computational Science</h3><p>Numerical modeling, simulation, and algorithm development for scientific and engineering problems.</p></article>
+      <article class="topic-card"><h3>Nonlinear Waves</h3><p>Analytical and numerical investigation of nonlinear evolution equations and wave phenomena.</p></article>
+      <article class="topic-card"><h3>Parallel Computing</h3><p>High-performance computational methods for large-scale scientific applications.</p></article>
+      <article class="topic-card"><h3>Water-Wave Models</h3><p>Software and numerical techniques for mathematical models of water-wave propagation.</p></article>
+      <article class="topic-card"><h3>Optical-Fiber Systems</h3><p>Computational methods for models arising in optical communication systems.</p></article>
+      <article class="topic-card"><h3>Systems Biology</h3><p>Interdisciplinary computational work involving biological systems and genomics.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section muted">
+  <div class="container split">
+    <div><p class="section-label">Research profile</p><h2>Computation, mathematics, and applications</h2></div>
+    <div class="prose">
+      <p>
+        Dr. Taha's work connects numerical analysis and computer science with applications
+        in nonlinear science, wave propagation, communications, and biology.
+      </p>
+      <p>
+        His research has been supported by agencies and institutions including NSF, DOE,
+        DoD, USDA, and Northeastern University.
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

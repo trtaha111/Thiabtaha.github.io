@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected invited presentations by Thiab R. Taha.">
+  <title>Presentations | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="">Research</a>
+<a href="leadership.html" class="">Leadership</a>
+<a href="publications.html" class="">Publications</a>
+<a href="presentations.html" class="active">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Presentations</p><h1>Selected invited and keynote presentations</h1></div></section>
+<section class="section">
+  <div class="container">
+    <p class="intro">Dr. Taha has delivered more than 100 invited presentations. Selected keynote presentations include:</p>
+    <div class="timeline">
+      <article><div>2019</div><section><h3>Second International Conference on New Trends in Computing Sciences</h3><p>Invited keynote, Amman, Jordan.</p></section></article>
+      <article><div>2018</div><section><h3>MASCOT 2018</h3><p>Invited keynote, Meeting on Applied Scientific Computing and Tools, Rome, Italy.</p></section></article>
+      <article><div>2015</div><section><h3>High Performance Computing and Big Data Challenges</h3><p>Invited keynote, MASCOT 2015, Rome, Italy.</p></section></article>
+      <article><div>2011</div><section><h3>Nonlinear Waves</h3><p>Invited keynote, Georgia Scientific Computing Symposium, Emory University.</p></section></article>
+      <article><div>2010</div><section><h3>Parallel Numerical Methods for Solving Nonlinear Evolution Equations</h3><p>Invited keynote, MASCOT 2010, Las Palmas de Gran Canaria, Spain.</p></section></article>
+      <article><div>2009</div><section><h3>Arab Conference on Information Technology</h3><p>Keynote on behalf of the Steering Committee, Sana'a, Yemen.</p></section></article>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

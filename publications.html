@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected publications of Thiab R. Taha.">
+  <title>Publications | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="">Research</a>
+<a href="leadership.html" class="">Leadership</a>
+<a href="publications.html" class="active">Publications</a>
+<a href="presentations.html" class="">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Publications</p><h1>Selected refereed publications</h1></div></section>
+<section class="section">
+  <div class="container">
+    <p class="intro">The CV reports more than 100 journal and conference papers. Selected recent entries are listed below.</p>
+    <div class="publication-list">
+      <article><span>2023</span><div><h3>An L1 type difference/Galerkin spectral scheme for variable-order time-fractional nonlinear diffusion-reaction equations with fixed delay</h3><p>M. A. Zaky, K. Van Bockstal, T. R. Taha, D. Suragan, and A. S. Hendy. <em>Journal of Computational and Applied Mathematics</em>, Vol. 420.</p></div></article>
+      <article><span>2022</span><div><h3>An energy-preserving computational approach for the semilinear space fractional damped Klein-Gordon equation with a generalized scalar potential</h3><p>A. S. Hendy, T. R. Taha, D. Suragan, and M. A. Zaky. <em>Applied Mathematical Modelling</em>, Vol. 108, pp. 512–530.</p></div></article>
+      <article><span>2021</span><div><h3>Comment on “Exact analytic solitary wave solutions for the RKL model”</h3><p>T. Taha and H. Triki. <em>Mathematics and Computers in Simulation</em>, Vol. 182, p. 234.</p></div></article>
+    </div>
+    <div class="button-row"><a class="button primary" href="assets/Taha_CV_2026.pdf">Complete CV and publication record</a></div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

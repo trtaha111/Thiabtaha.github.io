@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic leadership of Thiab R. Taha at the University of Georgia.">
+  <title>Leadership | Thiab R. Taha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Thiab R. Taha</strong>
+          <small>Professor Emeritus · University of Georgia</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav"><a href="index.html" class="">Home</a>
+<a href="biography.html" class="">Biography</a>
+<a href="education.html" class="">Education</a>
+<a href="research.html" class="">Research</a>
+<a href="leadership.html" class="active">Leadership</a>
+<a href="publications.html" class="">Publications</a>
+<a href="presentations.html" class="">Presentations</a>
+<a href="conferences.html" class="">Conferences</a>
+<a href="honors.html" class="">Honors</a>
+<a href="editorial.html" class="">Editorial</a>
+<a href="service.html" class="">Service</a>
+<a href="grants.html" class="">Grants</a>
+<a href="contact.html" class="">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    
+<section class="page-hero"><div class="container"><p class="eyebrow">Leadership</p><h1>Academic leadership at the University of Georgia</h1></div></section>
+<section class="section">
+  <div class="container">
+    <div class="callout">
+      <h2>Department Head, 2013–2022</h2>
+      <p>
+        During Dr. Taha's tenure, the Department of Computer Science experienced substantial growth
+        in majors, graduate students, faculty, and credit-hour production.
+      </p>
+    </div>
+    <div class="card-grid two">
+      <article class="detail-card"><h3>Enrollment growth</h3><p>The department grew from 441 computer science majors in Fall 2013 to nearly 1,500 majors by Fall 2022, with more than 290 minors and 235 graduate students.</p></article>
+      <article class="detail-card"><h3>Faculty development</h3><p>Twenty-six faculty members were hired during his tenure as department head.</p></article>
+      <article class="detail-card"><h3>New academic programs</h3><p>Programs included certificates and degrees in data science, cybersecurity and privacy, Double Dawgs pathways, and a non-thesis M.S. option.</p></article>
+      <article class="detail-card"><h3>Research distinction</h3><p>The department established the Institute for Cybersecurity and Privacy and achieved national recognition in cybersecurity education.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section muted">
+  <div class="container split">
+    <div><h2>Creation of the School of Computing</h2></div>
+    <div class="prose">
+      <p>
+        Dr. Taha played a significant role in creating the School of Computing.
+        He co-chaired the Academic Planning Committee and the Scholarly Planning Committee.
+      </p>
+      <p>
+        Their work contributed to the academic planning document and proposal that led to
+        approval and establishment of the School of Computing at UGA.
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p><a href="assets/Taha_CV_2026.pdf">Download CV</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
