@@ -1,69 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My My personal Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #1f4e79;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        main {
-            background-color: white;
-            padding: 30px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Thiab R. Taha: computational science, numerical methods, nonlinear waves, parallel computing, and academic leadership.">
+  <title>Thiab R. Taha | Academic Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<header>
-    <h1>Welcome to My Website</h1>
-    <p>Information about my work and activities</p>
-</header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Thiab R. Taha home">
+        <span class="brand-mark">TT</span>
+        <span>Thiab R. Taha</span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#publications">Publications</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-    <h2>About Me</h2>
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Computational Science · Numerical Analysis · Parallel Computing</p>
+          <h1>Thiab R. Taha</h1>
+          <p class="hero-subtitle">
+            Scholar, educator, academic leader, and conference organizer whose work spans
+            nonlinear waves, scientific computing, high-performance computing, software
+            development, and systems biology.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="assets/Taha_CV_2026.pdf">Download CV</a>
+            <a class="button secondary" href="#research">Explore research</a>
+          </div>
+        </div>
 
-    <p>
-        Welcome to my website. This page provides information
-        about my professional activities, research, and projects.
-    </p>
+        <aside class="profile-card" aria-label="Professional summary">
+          <div class="monogram" aria-hidden="true">TRT</div>
+          <h2>Professional Profile</h2>
+          <p>School of Computing<br>University of Georgia</p>
+          <dl>
+            <div><dt>Publications</dt><dd>100+</dd></div>
+            <div><dt>Invited presentations</dt><dd>100+</dd></div>
+            <div><dt>UGA faculty career</dt><dd>Since 1982</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
+    <section class="highlights" aria-label="Career highlights">
+      <div class="container card-grid four">
+        <article class="stat-card">
+          <span class="stat">1985</span>
+          <p>M. G. Michael Award for Research in the Sciences at UGA</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat">1995</span>
+          <p>Fulbright Scholar and visiting professor at the University of Jordan</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat">2013–2022</span>
+          <p>Head of the University of Georgia Computer Science Department</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat">2022–2023</span>
+          <p>Interim Director of the University of Georgia School of Computing</p>
+        </article>
+      </div>
+    </section>
 
-    <p>
-        Email:
-        <a href="mailto:trtaha@gmail.com">
-            trtaha@gmail.com
-        </a>
-    </p>
-</main>
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Academic career and service</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Thiab R. Taha earned a Ph.D. in Applied Mathematics and Computer Science from
+            Clarkson University in 1982, an M.Sc. in Mathematics (Numerical Analysis) from
+            the University of Jordan in 1977, and a B.Sc. in Mathematics from the University
+            of Jordan in 1972.
+          </p>
+          <p>
+            He joined the University of Georgia in 1982 and advanced through the ranks of
+            Assistant Professor, Associate Professor, and Professor. His career combines
+            research, teaching, academic administration, professional service, journal
+            leadership, and international conference organization.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 My Website</p>
-</footer>
+    <section id="research" class="section section-muted">
+      <div class="container">
+        <p class="section-label">Research</p>
+        <h2>Research areas</h2>
+        <div class="card-grid three">
+          <article class="topic-card">
+            <h3>Computational Science</h3>
+            <p>Numerical methods and scientific software for complex mathematical models.</p>
+          </article>
+          <article class="topic-card">
+            <h3>Nonlinear Waves</h3>
+            <p>Computation and theory for nonlinear evolution equations, water waves, and related systems.</p>
+          </article>
+          <article class="topic-card">
+            <h3>Parallel Computing</h3>
+            <p>High-performance methods for scientific computation and large-scale applications.</p>
+          </article>
+          <article class="topic-card">
+            <h3>Optical Communications</h3>
+            <p>Software and numerical techniques for models arising in optical-fiber communication systems.</p>
+          </article>
+          <article class="topic-card">
+            <h3>Systems Biology</h3>
+            <p>Computational methods and interdisciplinary applications in biological systems.</p>
+          </article>
+          <article class="topic-card">
+            <h3>Data Science & Cybersecurity</h3>
+            <p>Program development, training initiatives, and academic leadership in emerging computing fields.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="leadership" class="section">
+      <div class="container">
+        <p class="section-label">Leadership</p>
+        <h2>Academic leadership at UGA</h2>
+        <div class="timeline">
+          <article>
+            <div class="timeline-date">2022–2023</div>
+            <div>
+              <h3>Interim Director, School of Computing</h3>
+              <p>
+                Helped guide the newly established School of Computing and co-chaired its
+                Academic Planning and Scholarly Planning committees.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="timeline-date">2013–2022</div>
+            <div>
+              <h3>Head, Department of Computer Science</h3>
+              <p>
+                Led a period of major growth in enrollment, faculty, academic programs,
+                cybersecurity initiatives, data science education, and research distinction.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="timeline-date">1994–2013</div>
+            <div>
+              <h3>Professor of Computer Science</h3>
+              <p>
+                Conducted research and teaching while holding extensive university,
+                professional, and editorial service responsibilities.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-muted">
+      <div class="container">
+        <p class="section-label">Scholarship</p>
+        <h2>Selected publications</h2>
+        <div class="publication-list">
+          <article>
+            <p class="pub-year">2023</p>
+            <div>
+              <h3>An L1 type difference/Galerkin spectral scheme for variable-order time-fractional nonlinear diffusion-reaction equations with fixed delay</h3>
+              <p>M. A. Zaky, K. Van Bockstal, T. R. Taha, D. Suragan, and A. S. Hendy. <em>Journal of Computational and Applied Mathematics</em>, Vol. 420.</p>
+            </div>
+          </article>
+          <article>
+            <p class="pub-year">2022</p>
+            <div>
+              <h3>An energy-preserving computational approach for the semilinear space fractional damped Klein-Gordon equation with a generalized scalar potential</h3>
+              <p>A. S. Hendy, T. R. Taha, D. Suragan, and M. A. Zaky. <em>Applied Mathematical Modelling</em>, Vol. 108, pp. 512–530.</p>
+            </div>
+          </article>
+          <article>
+            <p class="pub-year">2021</p>
+            <div>
+              <h3>Comment on “Exact analytic solitary wave solutions for the RKL model”</h3>
+              <p>T. Taha and H. Triki. <em>Mathematics and Computers in Simulation</em>, Vol. 182, pp. 234–234.</p>
+            </div>
+          </article>
+        </div>
+        <p class="section-action"><a href="assets/Taha_CV_2026.pdf">View the complete publication information in the CV →</a></p>
+      </div>
+    </section>
+
+    <section id="honors" class="section">
+      <div class="container">
+        <p class="section-label">Recognition & service</p>
+        <h2>Honors, editorial work, and professional leadership</h2>
+        <div class="card-grid three">
+          <article class="detail-card">
+            <h3>IMACS</h3>
+            <p>Vice President and member of the Board of Directors of the International Association for Mathematics and Computers in Simulation.</p>
+          </article>
+          <article class="detail-card">
+            <h3>Journal leadership</h3>
+            <p>Co-Editor-in-Chief of <em>Applied Numerical Mathematics</em> and editorial service for MATCOM and IAJIT.</p>
+          </article>
+          <article class="detail-card">
+            <h3>Conference organization</h3>
+            <p>Program chair and conference coordinator for the IMACS conferences on Nonlinear Evolution Equations and Wave Phenomena, 1999–2025.</p>
+          </article>
+          <article class="detail-card">
+            <h3>IMACS World Congress</h3>
+            <p>Co-Chair of the 2023 World Congress in Rome and the 2027 World Congress in Seville.</p>
+          </article>
+          <article class="detail-card">
+            <h3>Fulbright</h3>
+            <p>Fulbright Scholar and member of the Middle East Advisory Panel on the Fulbright Senior Scholar Program.</p>
+          </article>
+          <article class="detail-card">
+            <h3>Professional societies</h3>
+            <p>Senior member of ACM and member of IEEE, SIAM, and several SIAM activity groups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Professional contact</h2>
+          <p>School of Computing<br>University of Georgia<br>Athens, Georgia, USA</p>
+        </div>
+        <div class="contact-card">
+          <h3>Curriculum Vitae</h3>
+          <p>Download the complete CV for appointments, grants, professional activities, publications, presentations, and service.</p>
+          <a class="button primary" href="assets/Taha_CV_2026.pdf">Download CV (PDF)</a>
+          <!-- Add your preferred email address here later:
+          <p><a href="mailto:your-email@uga.edu">your-email@uga.edu</a></p>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Thiab R. Taha</p>
+      <p>Academic homepage hosted with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const nav = document.querySelector('.site-nav');
+
+    menuButton.addEventListener('click', () => {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.site-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
